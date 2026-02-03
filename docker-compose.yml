@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  main-api:
+    build: .
+    container_name: car_leads_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - MOCK_API_URL=http://mock-api:8001
+      - RUN_IN_DOCKER=1
+    depends_on:
+      - mock-api
+
+  mock-api:
+    build: ./mock-api
+    container_name: mock_api
+    ports:
+      - "8001:8001"
