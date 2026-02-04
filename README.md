@@ -117,3 +117,6 @@ Logs are written to: logs/leads.log
 
 https://github.com/user-attachments/assets/5dabd1fb-3110-4a72-883f-de88c3add418
 
+<img width="1650" height="934" alt="image" src="https://github.com/user-attachments/assets/7ef53069-105b-47d1-95c5-3cc4dac3b895" />
+
+
