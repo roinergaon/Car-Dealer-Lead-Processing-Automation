@@ -2,6 +2,30 @@ from models import LeadInput
 from config import DISPOSABLE_DOMAINS
 
 def validate_lead(lead: LeadInput):
+    """
+       Validates the lead data including email and phone.
+
+       # -----------------------------------------------
+       # Email verification interface
+       # -----------------------------------------------
+       # Why email verification services are important for business automation:
+       # 1. Ensures the email is deliverable, reducing bounce rates in campaigns.
+       # 2. Prevents fake or disposable emails from entering the system, improving lead quality.
+       # 3. Automates the process of filtering invalid leads, saving manual work.
+       # 4. Increases trust and reliability of CRM and marketing analytics.
+
+       # Example 3rd party API providers for email validation:
+
+       # - ZeroBounce (https://www.zerobounce.net)
+       # - Hunter.io (https://hunter.io/email-verifier)
+
+       # Business benefits:
+       # - Higher lead conversion rate due to accurate contacts.
+       # - Reduced cost for marketing campaigns (emails only sent to valid addresses).
+       # - Improved CRM data quality for analytics and reporting.
+       # - Better reputation with email service providers (avoiding spam/bounce flag
+   """
+
     if not lead.BranchID.isdigit():
         return False, "BranchID must be numeric"
 
