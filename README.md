@@ -54,6 +54,7 @@ Open a shell inside the main API container:
 docker-compose exec main-api bash
 ```
 Run the posting script: python post_leads.py
+processed_leads.json will be saved inside data folder.
 
 You should see a response confirming that the leads were successfully received.
 
