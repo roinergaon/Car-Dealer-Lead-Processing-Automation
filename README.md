@@ -111,3 +111,8 @@ Logs are written to: logs/leads.log
 - Docker-based environments
 
 - Clean project structure and logging
+
+
+
+https://github.com/user-attachments/assets/5dabd1fb-3110-4a72-883f-de88c3add418
+
